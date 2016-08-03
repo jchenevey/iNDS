@@ -9,7 +9,6 @@
 #include "mic.h"
 #import "iNDSMicrophone.h"
 #import "TPCircularBuffer.h"
-#import <AVFoundation/AVFAudio.h>
 
 // For easy timing functions... remove later
 #import <UIKit/UIKit.h>
@@ -26,7 +25,7 @@ void Mic_DeInit(){
 }
 BOOL Mic_Init(){
     printf("Mic Init\n");
-    if (!microphone && [[AVAudioSession sharedInstance] respondsToSelector:@selector(requestRecordPermission)]) {
+    if (!microphone) {
         dispatch_async(dispatch_get_main_queue(), ^{
             microphone = [[iNDSMicrophone alloc] init];
             micEnabled = microphone.micEnabled;
