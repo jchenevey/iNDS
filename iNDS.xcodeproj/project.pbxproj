@@ -1755,6 +1755,12 @@
 				CLASSPREFIX = iNDS;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = iNDS;
+				TargetAttributes = {
+					BFCFE0EE1764FBD3000A70CF = {
+						DevelopmentTeam = 84MS4542H5;
+						DevelopmentTeamName = "Joe Chenevey";
+					};
+				};
 			};
 			buildConfigurationList = BFCFE0EA1764FBD3000A70CF /* Build configuration list for PBXProject "iNDS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2259,7 +2265,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ApprenticeMediaLLC.iNDS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jchenev.iNDS;
 				PRODUCT_NAME = iNDS;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -2313,7 +2319,7 @@
 					"-ObjC",
 					"$(inherited)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ApprenticeMediaLLC.iNDS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jchenev.iNDS;
 				PRODUCT_NAME = iNDS;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
